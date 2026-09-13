@@ -12,6 +12,7 @@
 | Open questions | `docs/OPEN_QUESTIONS.md` | `OQ-####` | yes | no coordination mechanism |
 | Backlog | `docs/evidence/backlog.md` | `BL-####` | no — rows close | no coordination mechanism |
 | Verification | `docs/evidence/verification.md` | one row per REQ | no — status moves | no coordination mechanism |
+| Retrospective | `docs/evidence/retro.md` | standing instructions, max 10 | no — instructions retire | no coordination mechanism |
 
 ## Единственные источники истины
 
@@ -25,6 +26,7 @@
 | Whether a scenario is actually implemented | `docs/evidence/verification.md` | link to the row |
 | Open work not yet started | `docs/evidence/backlog.md` | cite `BL-####` |
 | State of the client repositories | `README.md` | link to it |
+| Standing instruction for future runs | `docs/evidence/retro.md` | cite the numbered instruction |
 | Documentation navigation | `README.md` | links only |
 
 ## Матрица распространения изменений

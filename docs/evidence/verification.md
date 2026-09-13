@@ -42,10 +42,28 @@
 | Линт нативной части Chat | `cargo clippy --all-targets -- -D warnings` | чисто |
 | Тесты нативной части Chat | `cargo test` | 4 из 4 |
 
+## CI после первого пуша (2026-09-14)
+
+Семь job'ов в трёх репозиториях, все `success`. Вердикты прочитаны, а не
+предположены: `gh api repos/ssheleg/<repo>/actions/runs/<id>/jobs`.
+
+| Репозиторий | Коммит | Job | Вывод |
+|---|---|---|---|
+| `underline` | `e5c8c47` | documentation gate | success |
+| `underline-cli` | `8f1696c` | fmt + clippy | success |
+| `underline-cli` | `8f1696c` | test (ubuntu-latest) | success |
+| `underline-cli` | `8f1696c` | test (macos-latest) | success |
+| `underline-chat` | `1b8ac1c` | typecheck + test + build | success |
+| `underline-chat` | `1b8ac1c` | rust (ubuntu-latest) | success |
+| `underline-chat` | `1b8ac1c` | rust (macos-latest) | success |
+
+Прогон на `ubuntu-latest` снял часть сомнений о Linux: тесты прав `0700`/`0600`
+выполнились там по-настоящему, а не только на macOS.
+
 ## Что не проверено ни разу
 
 | Строка | Почему | Статус |
 |---|---|---|
-| CI всех трёх репозиториев | воркфлоу написаны, но на GitHub ещё не выполнялись на момент записи | never |
-| Сборка `npm run tauri build` | приложение ни разу не собиралось в дистрибутив | never |
-| Поведение на Linux | все локальные прогоны выполнены на macOS 25.6 | never |
+| Сборка `npm run tauri build` | приложение ни разу не собиралось в дистрибутив — ни локально, ни в CI | never |
+| Путь каталога состояния по умолчанию на Linux | измерен только путь macOS; на Linux он выведен из правил крейта `directories`, а не наблюдался | never |
+| Окно Underline Chat на экране | нативная часть компилируется и тестируется, но `npm run tauri dev` человеком не запускался | never |

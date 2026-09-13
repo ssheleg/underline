@@ -36,6 +36,7 @@ Underline — local-first протокол общения и социальна�
 - [Доска задач](docs/evidence/backlog.md)
 - [Реестр проверок](docs/evidence/verification.md)
 - [Передача работы](docs/HANDOFF.md)
+- [Ретроспектива и постоянные инструкции](docs/evidence/retro.md)
 
 ## Проверка документации
 
