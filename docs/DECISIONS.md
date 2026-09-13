@@ -15,7 +15,7 @@
   вопросы имеют стабильные идентификаторы; `scripts/check-docs.sh` выполняется
   перед коммитом.
 - **Consequences / affects:** `docs/DOCMAP.md`, `docs/OPEN_QUESTIONS.md`, `README.md`
-- **Source:** разговор `underline` · commit `unavailable: repository not initialized`
+- **Source:** разговор `underline` · впервые зафиксировано в коммите `be0c9ba`
 
 ### DEC-0002 — OpenMLS является криптографическим слоем групп
 
@@ -26,7 +26,7 @@
 - **Decision:** группы и личные пространства используют MLS через Rust-библиотеку
   OpenMLS; прикладные события передаются как MLS application messages.
 - **Consequences / affects:** `docs/ARCHITECTURE.md`, `docs/PRODUCT.md`, `docs/ux/scenarios.md`
-- **Source:** разговор `underline` · commit `unavailable: repository not initialized`
+- **Source:** разговор `underline` · впервые зафиксировано в коммите `be0c9ba`
 
 ### DEC-0003 — Первый исполняемый клиент создаётся как CLI на Rust
 
@@ -37,7 +37,7 @@
 - **Decision:** первый вертикальный срез — Rust CLI; команды строятся на Clap, а
   Ratatui добавляется после работающего сквозного обмена.
 - **Consequences / affects:** `README.md`, `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, `docs/ux/scenarios.md`
-- **Source:** разговор `underline` · commit `unavailable: repository not initialized`
+- **Source:** разговор `underline` · впервые зафиксировано в коммите `be0c9ba`
 
 ### DEC-0004 — Прикладной протокол не зависит от транспорта
 
@@ -48,7 +48,7 @@
 - **Decision:** события, MLS и репликация зависят от внутреннего transport interface,
   но не от Iroh, libp2p или loopback напрямую.
 - **Consequences / affects:** `docs/ARCHITECTURE.md`, `docs/OPEN_QUESTIONS.md`
-- **Source:** разговор `underline` · commit `unavailable: repository not initialized`
+- **Source:** разговор `underline` · впервые зафиксировано в коммите `be0c9ba`
 
 ### DEC-0005 — Underline Chat строится как Tauri-приложение с фронтендом на TypeScript и React
 
@@ -64,4 +64,4 @@
   вместо второй реализации протокола на другом языке.
 - **Consequences / affects:** `README.md`, `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`,
   репозиторий `ssheleg/underline-chat`
-- **Source:** разговор `underline` · bootstrap-коммит репозитория `ssheleg/underline`
+- **Source:** разговор `underline` · коммит `be0c9ba`
