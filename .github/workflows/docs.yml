@@ -1,0 +1,23 @@
+name: docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  documentation-gate:
+    name: documentation gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # По DEC-0001 это блокирующий гейт: он проверяет наличие канонических
+      # документов, навигацию README, аллокаторы реестров и закрытый словарь
+      # статусов. Корректность архитектуры он не доказывает — см. docs/DOCMAP.md.
+      - name: documentation gate
+        run: bash scripts/check-docs.sh

@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Local agent state
+.claude/settings.local.json
+
+# Build output (клиенты живут в отдельных репозиториях, но локальные
+# эксперименты не должны попадать в репозиторий спецификации)
+target/
+node_modules/
+dist/
