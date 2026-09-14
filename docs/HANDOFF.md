@@ -13,7 +13,7 @@
 | Репозиторий | Что появилось |
 |---|---|
 | [ssheleg/underline](https://github.com/ssheleg/underline) | git-история, `.gitignore`, MIT, `CLAUDE.md`, CI с гейтом документации, DEC-0005, OQ-0006, OQ-0007, реестры `docs/evidence/` |
-| [ssheleg/underline-cli](https://github.com/ssheleg/underline-cli) | Rust + clap: вся командная поверхность SCN-001…005, настоящее локальное состояние ноды, 24 теста, CI на Linux и macOS |
+| [ssheleg/underline-node](https://github.com/ssheleg/underline-node) (до 2026-09-14 — `underline-cli`) | Rust + clap: вся командная поверхность SCN-001…005, настоящее локальное состояние ноды, 24 теста, CI на Linux и macOS |
 | [ssheleg/underline-chat](https://github.com/ssheleg/underline-chat) | Tauri 2 + React 19 + TypeScript: окно, IPC-команда `protocol_status`, 6 тестов интерфейса и 4 нативной части, CI |
 
 ## Решения, принятые в этом изменении
@@ -46,8 +46,10 @@ OQ-0006 (ключи), OQ-0001 (транспорт), полная реализа�
 
 ## Следующая задача, одной строкой
 
-**BL-0001:** выбрать формат и хранение ключей идентичности устройства, записать
-это решением `DEC-0006`, перевести OQ-0006 в `Resolved→DEC-0006` — и только
-после этого браться за `underline init` в `underline-cli`.
+**BL-0013:** превратить `underline-node` в workspace с крейтом `underline-core`,
+реализовать в нём конверт события по DEC-0019 (версия, домен, автор по ключу,
+бутстрап `space_id`) с тестами на каждое правило валидности — до любой сетевой
+работы. Затем BL-0014: командная поверхность CLI под двухшаговый SCN-002.
 
-Точка входа: [доска задач](evidence/backlog.md).
+Точка входа: [доска задач](evidence/backlog.md). Решения первого среза —
+DEC-0018…DEC-0025 в [реестре](DECISIONS.md).

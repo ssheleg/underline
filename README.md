@@ -15,7 +15,7 @@ Underline — local-first протокол общения и социальна�
 | Репозиторий | Роль | Состояние |
 |---|---|---|
 | [ssheleg/underline](https://github.com/ssheleg/underline) | спецификация, архитектура, реестры решений и вопросов | этот репозиторий |
-| [ssheleg/underline-cli](https://github.com/ssheleg/underline-cli) | терминальный клиент на Rust (DEC-0003) | каркас команд; протокольный слой не реализован |
+| [ssheleg/underline-node](https://github.com/ssheleg/underline-node) | ядро протокола `underline-core` и терминальный клиент на Rust (DEC-0003, DEC-0022) | каркас команд; протокольный слой не реализован |
 | [ssheleg/underline-chat](https://github.com/ssheleg/underline-chat) | desktop-клиент на Tauri (DEC-0005) | каркас приложения; протокольный слой не реализован |
 
 Ни один клиент пока не выполняет сценарии из [docs/ux/scenarios.md](docs/ux/scenarios.md):
@@ -39,8 +39,9 @@ Underline — local-first протокол общения и социальна�
 - [Измерения MLS](docs/research/2026-09-14-mls-measurements.md) и
   [хранение ключей](docs/research/2026-09-14-key-custody.md)
 
-Двенадцать решений DEC-0006…DEC-0017 имеют статус `Proposed`: они предложены с
-обоснованием, но не приняты, и реализовывать их до принятия нельзя.
+Аудит 2026-09-14 принял восемь решений первого среза DEC-0018…DEC-0025; из
+предложенных DEC-0006…DEC-0017 часть заменена ими, остальные отложены с
+условием возврата (DEC-0025).
 
 ## Рабочие реестры
 
