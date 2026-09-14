@@ -27,6 +27,9 @@
 | Open work not yet started | `docs/evidence/backlog.md` | cite `BL-####` |
 | State of the client repositories | `README.md` | link to it |
 | Standing instruction for future runs | `docs/evidence/retro.md` | cite the numbered instruction |
+| Threat model and controls | `docs/security/threat-model.md` | link to the section |
+| Metadata and transport analysis | `docs/security/metadata.md` | link to the section |
+| Measured research behind a decision | `docs/research/` | cite the file and its date |
 | Documentation navigation | `README.md` | links only |
 
 ## Матрица распространения изменений
@@ -38,6 +41,7 @@
 | Resolved question | `docs/OPEN_QUESTIONS.md`, `docs/DECISIONS.md`, owning topic document | `scripts/check-docs.sh` status and id checks |
 | Product scope | `docs/PRODUCT.md`, decision or open question | review — scope is a product judgement |
 | Architecture or domain term | `docs/ARCHITECTURE.md`, relevant decision | review — meaning is not a mechanical property |
+| Security control or attack | `docs/security/threat-model.md`, the decision that introduces the control | review — a control without a decision is a wish |
 | User-visible CLI behaviour | `docs/ux/scenarios.md`, CLI help/tests once code exists | dormant until CLI exists |
 | Scenario becomes implemented | `docs/evidence/verification.md`, `README.md` state column | review — a green test is not a satisfied scenario |
 | New client repository | `README.md` repository table, `docs/DOCMAP.md` | review |
